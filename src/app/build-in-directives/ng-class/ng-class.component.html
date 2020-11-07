@@ -1,0 +1,15 @@
+<h1 [ngClass]="{'orange-color': isOrange}">
+WIELKI NAPIS
+</h1>
+<button (click)="isOrange = !isOrange">{{!isOrange ? 'Pomarańczony' : 'Biały'}}</button>
+
+<h1 [ngClass]="{'orange-color': complexObject}">
+    {{complexObject ? complexObject.text : 'Pusto'}}
+</h1>
+<button (click)="addText()">{{!isOrange ? 'Pomarańczony' : 'Biały'}}</button>
+
+
+<!--<h1 [ngClass]="{'orange-color': complexObject}">-->
+<!--    {{complexObject ? !!complexObject : 'Pusto'}}-->
+<!--</h1>-->
+<!--<button (click)="addText()">{{!isOrange ? 'Pomarańczony' : 'Biały'}}</button>-->

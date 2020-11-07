@@ -1,0 +1,14 @@
+<h1>
+    <button (click)="array.push('text')">Dodaj text</button>
+    <br>
+    Napisy:
+    <p *ngFor="let text of array">{{text}}</p>
+</h1>
+
+
+<!--<h1>-->
+<!--    <button (click)="array.push('text')">Dodaj text z licznikiem</button>-->
+<!--    <br>-->
+<!--    Napisy z licznikiem:-->
+<!--    <p *ngFor="let text of array; let i = index;">{{text + ' ' + i}}</p>-->
+<!--</h1>-->

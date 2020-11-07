@@ -1,0 +1,7 @@
+<button [disabled]="disabled">Button 1</button>
+
+<button [disabled]="disabled2">Button 2</button>
+
+<button [disabled]="disabled && !disabled2">Button 3</button>
+
+<button [disabled]="!getDisabled()">Button 4</button>

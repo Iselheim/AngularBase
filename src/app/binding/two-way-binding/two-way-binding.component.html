@@ -1,0 +1,10 @@
+<label for="input1">Event binding</label>
+<input id="input1" type="text" (input)="onInput($event)">
+<br>
+<label for="input2">Two way binding</label>
+<input id="input2" type="text" [(ngModel)]="text">
+<br>
+<div>
+    Value:
+    <p>{{text}}</p>
+</div>

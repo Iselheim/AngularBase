@@ -1,0 +1,12 @@
+<button (click)="switchComponent()">Switch</button>
+<br>
+
+<h1 *ngIf="!component; else showComponent">
+    Empty
+</h1>
+
+<ng-template #showComponent>
+    <app-event-binding></app-event-binding>
+</ng-template>
+
+

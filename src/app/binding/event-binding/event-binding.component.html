@@ -1,0 +1,10 @@
+<button (click)="onClick()">Add text</button>
+
+
+<button (click)="array.push('text2');">Add text 2</button>
+<p *ngFor="let text of array">{{text}}</p>
+
+<br>
+<input type="text" (input)="onInput($event)">
+<br>
+{{text}}

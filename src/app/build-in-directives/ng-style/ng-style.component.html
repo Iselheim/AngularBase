@@ -1,0 +1,16 @@
+<button (click)="isGreen = !isGreen">Change color</button>
+<h1 [ngStyle]="{backgroundColor: isGreen ? 'green' : 'red'}">
+    KOLOROWY NAPIS
+</h1>
+
+<h1 [ngStyle]="{backgroundColor: getPinkColor()}">
+    RÓŻOWY NAPIS
+</h1>
+
+<h1 [ngStyle]="getGreenbackGround()">
+    ZIELONY NAPIS
+</h1>
+
+<h1 [ngStyle]="getBlackBackgroundWithBorder()">
+    CZARNY NAPIS
+</h1>
