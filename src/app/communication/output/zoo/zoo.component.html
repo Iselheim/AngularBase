@@ -1,0 +1,4 @@
+<h1> Co słychać:  {{voice}}</h1>
+<h1> Zoo: </h1>
+<app-dog *ngFor="let dog of dogs" [name]="dog" (voiceEvent)="onVoice($event)"></app-dog>
+<app-cat *ngFor="let cat of cats" [name]="cat" (voiceEvent)="onVoice($event)"></app-cat>

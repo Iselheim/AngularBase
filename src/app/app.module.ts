@@ -12,6 +12,14 @@ import { NgForComponent } from './build-in-directives/ng-for/ng-for.component';
 import { NgIfElseComponent } from './build-in-directives/ng-if-else/ng-if-else.component';
 import { NgStyleComponent } from './build-in-directives/ng-style/ng-style.component';
 import { NgClassComponent } from './build-in-directives/ng-class/ng-class.component';
+import { UsersComponent } from './communication/input/users/users.component';
+import { UserComponent } from './communication/input/users/user/user.component';
+import { ZooComponent } from './communication/output/zoo/zoo.component';
+import { CatComponent } from './communication/output/zoo/cat/cat.component';
+import { DogComponent } from './communication/output/zoo/dog/dog.component';
+import { LocalReferenceComponent } from './local-reference/local-reference/local-reference.component';
+import { ViewChildComponent } from './local-reference/view-child/view-child.component';
+import { OnEventsComponent } from './on-events/on-events/on-events.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +32,15 @@ import { NgClassComponent } from './build-in-directives/ng-class/ng-class.compon
     NgForComponent,
     NgIfElseComponent,
     NgStyleComponent,
-    NgClassComponent
+    NgClassComponent,
+    UsersComponent,
+    UserComponent,
+    ZooComponent,
+    CatComponent,
+    DogComponent,
+    LocalReferenceComponent,
+    ViewChildComponent,
+    OnEventsComponent
   ],
   imports: [
     BrowserModule,

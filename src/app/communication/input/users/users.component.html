@@ -1,0 +1,12 @@
+<app-user [firstName]="'Jan'" [lastName]="'Kowalski'"></app-user>
+
+
+<label for="firstName"> Imię: </label>
+<input id="firstName" type="text" [(ngModel)]="firstName">
+<br>
+<label for="lastName"> Nazwisko: </label>
+<input id="lastName" type="text" [(ngModel)]="lastName">
+
+<button (click)="add()"> Dodaj</button>
+
+<app-user *ngFor="let user of users" [firstName]="user.firstName" [lastName]="user.lastName"></app-user>
