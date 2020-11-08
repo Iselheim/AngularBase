@@ -1,0 +1,7 @@
+<h1>Podejście z inputem i outputem</h1>
+<app-user-with-name [user]="account" (userEvent)="onUserEvent($event)"></app-user-with-name>
+<h1>Hello {{account}}</h1>
+
+<h1>Podejście z serwisem</h1>
+<app-user-with-name></app-user-with-name>
+<h1>Hello {{getAccount()}}</h1>

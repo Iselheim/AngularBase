@@ -1,0 +1,18 @@
+<h1>ComponentScope</h1>
+<button (click)="addValueComponentScope()">Dodaj</button>
+<p>Wartość: {{componentScope.value}}</p>
+
+<h1>AppComponentScope</h1>
+<button (click)="addValueAppComponentScope()">Dodaj</button>
+<p>Wartość: {{appComponentScope.value}}</p>
+
+<button (click)="addValueAppComponentScopeSecond()">Dodaj</button>
+<p>Wartość: {{appComponentSecondService.appComponentScope.value}}</p>
+
+
+<h1>AppScope</h1>
+<button (click)="addValueAppScope()">Dodaj</button>
+<p>Wartość: {{appScope.value}}</p>
+
+<button (click)="addValueAppScopeSecond()">Dodaj</button>
+<p>Wartość: {{appScopeSecondService.appScope.value}}</p>
