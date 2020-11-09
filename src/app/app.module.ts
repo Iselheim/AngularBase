@@ -36,8 +36,10 @@ import {UserWithNameComponent} from './services/communication/account/user-with-
 import {RouterModule, Routes} from '@angular/router';
 import {JavaComponent} from './routing/java/java.component';
 import {PythonComponent} from './routing/python/python.component';
-import { HomeComponent } from './routing/home/home.component';
-import { CarComponent } from './routing/car/car.component';
+import {HomeComponent} from './routing/home/home.component';
+import {CarComponent} from './routing/car/car.component';
+import {BaseHttpComponent} from './http/base-http/base-http.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -84,12 +86,14 @@ const appRoutes: Routes = [
     JavaComponent,
     PythonComponent,
     HomeComponent,
-    CarComponent
+    CarComponent,
+    BaseHttpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
