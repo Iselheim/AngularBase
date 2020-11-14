@@ -20,7 +20,7 @@ export class UsersComponent implements OnInit {
   }
 
   add() {
-    this.users.push(new User(this.firstName, this.lastName));
+    this.users.push(new User({firstName: this.firstName, lastName: this.lastName}));
     this.firstName = '';
     this.lastName = '';
   }
