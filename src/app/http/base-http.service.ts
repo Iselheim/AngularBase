@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 
@@ -7,9 +7,12 @@ import {Observable} from 'rxjs';
 })
 export class BaseHttpService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
   public getFakeData(): Observable<any> {
     return this.http.get('https://jsonplaceholder.typicode.com/todos/1');
+    // return this.http.get('https://jsonplaceholder.typicode.com/todos/1')
+    //     .pipe(map((value) => {return value['userId']}));
   }
 }

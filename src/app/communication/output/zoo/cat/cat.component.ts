@@ -17,6 +17,6 @@ export class CatComponent implements OnInit {
   }
 
   onClick() {
-    this.voiceEvent.emit(`Mew from ` + this.name);
+    this.voiceEvent.emit(`Meow from ` + this.name);
   }
 }

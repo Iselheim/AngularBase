@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {BaseHttpService} from '../base-http.service';
+import {BaseJson} from '../base-json';
 
 @Component({
   selector: 'app-base-http',
@@ -8,7 +9,7 @@ import {BaseHttpService} from '../base-http.service';
 })
 export class BaseHttpComponent implements OnInit {
 
-  public data: any = {};
+  public data: BaseJson;
 
   constructor(private baseHttp: BaseHttpService) { }
 
@@ -17,11 +18,7 @@ export class BaseHttpComponent implements OnInit {
 
   getDate() {
     this.baseHttp.getFakeData().subscribe(value => {
-      this.data = value;
+      console.log(value);
     })
-  }
-
-  getKeys(): string[] {
-    return this.data.keys;
   }
 }
