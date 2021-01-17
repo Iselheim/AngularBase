@@ -7,7 +7,7 @@ export class TypeScriptBase {
         number += 2;
 
         const text = 'text';
-        text += 'text';
+        // text += 'text';
 
         let text2 = 'text';
         text2 += 'text';
