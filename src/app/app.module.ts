@@ -40,6 +40,8 @@ import {HomeComponent} from './routing/home/home.component';
 import {CarComponent} from './routing/car/car.component';
 import {BaseHttpComponent} from './http/base-http/base-http.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { PipeExampleComponent } from './pipes/pipe-example/pipe-example.component';
+import { TranslatePipe } from './pipes/pipe-example/translate.pipe';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -87,7 +89,9 @@ const appRoutes: Routes = [
     PythonComponent,
     HomeComponent,
     CarComponent,
-    BaseHttpComponent
+    BaseHttpComponent,
+    PipeExampleComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
