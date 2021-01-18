@@ -19,6 +19,7 @@ export class BaseHttpComponent implements OnInit {
   getDate() {
     this.baseHttp.getFakeData().subscribe(value => {
       console.log(value);
+      // this.data = value
       // let baseJson = new BaseJson(value);
     })
   }
