@@ -13,11 +13,11 @@ export class CarComponent implements OnInit {
   constructor(private router: ActivatedRoute) { }
 
   ngOnInit() {
-    let param = this.router.snapshot.params['name'];
-    this.carName = param;
+    // let param = this.router.snapshot.params['name'];
+    // this.carName = param;
 
     this.router.params.subscribe((params:Params) => {
-      let carName = params['name'];
+      this.carName = params['name'];
     })
   }
 

@@ -7,17 +7,17 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 })
 export class ViewChildComponent implements OnInit {
 
-  @ViewChild('inputName',{static: false}) inputName: ElementRef;
+  // @ViewChild('inputName',{static: false}) inputName: ElementRef;
 
-  // @ViewChild('inputName',{static: true}) inputName: ElementRef;
+  @ViewChild('inputName',{static: true}) inputName: ElementRef;
 
   public name: string;
 
   constructor() { }
 
   ngOnInit() {
-    // console.log('From onInit inputName', this.inputName);
-    // console.log('From onInit inputName.nativeElement', this.inputName.nativeElement);
+    console.log('From onInit inputName', this.inputName);
+    console.log('From onInit inputName.nativeElement', this.inputName.nativeElement);
   }
 
   print() {
