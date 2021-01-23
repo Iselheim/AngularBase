@@ -12,7 +12,10 @@ export class BaseHttpService {
 
   public getFakeData(): Observable<any> {
     return this.http.get('https://jsonplaceholder.typicode.com/todos/1');
+
     // return this.http.get('https://jsonplaceholder.typicode.com/todos/1')
-    //     .pipe(map((value) => {return value['userId']}));
+    //     .pipe(
+    //         map((value) => {return value['userId']})
+    //     );
   }
 }

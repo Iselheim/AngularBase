@@ -73,7 +73,7 @@ export class ConstructorTrick {
     }
 
     create() {
-        let constructorTrick = new ConstructorTrick({text: 'napis', number: 1});
+        let constructorTrick = new ConstructorTrick({text: 'napis'});
         new ConstructorTrick(constructorTrick);
     }
 }

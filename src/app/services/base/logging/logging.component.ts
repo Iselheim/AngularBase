@@ -9,7 +9,7 @@ import {LoggingService} from './logging.service';
 export class LoggingComponent implements OnInit {
   public text: string;
 
-  constructor(private loggingService: LoggingService) {
+  constructor(public loggingService: LoggingService) {
   }
 
   ngOnInit() {

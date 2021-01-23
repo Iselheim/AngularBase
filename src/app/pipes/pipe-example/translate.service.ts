@@ -8,10 +8,10 @@ export class TranslateService {
   translateMap = new Map<string, string>();
 
   constructor() {
-    // setTimeout(() => {
+    setTimeout(() => {
       this.translateMap.set('1','jeden');
       this.translateMap.set('2','dwa');
-    // },500);
+    },500);
 
   }
 
